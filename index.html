@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CI/CD Docker Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    .box { padding: 16px; border: 1px solid #ddd; border-radius: 10px; max-width: 520px; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>CI/CD Docker Demo</h1>
+    <p>Kalau halaman ini muncul, berarti container Docker berhasil jalan.</p>
+    <p><b>Versi:</b> <span id="ver">v1</span></p>
+    <p><b>Waktu:</b> <span id="time"></span></p>
+    <p>Repo: <code>cicd-docker-demo</code></p>
+  </div>
+
+  <script>
+    document.getElementById('time').textContent = new Date().toString();
+  </script>
+</body>
+</html>
